@@ -1,0 +1,37 @@
+<html>
+
+   <head>
+      <title>The jQuery Example</title>
+   <script src="jquery-3.1.1.js"></script>
+		
+      <script type="text/javascript" src = "jquery-ui.js"></script>
+		
+      <script>
+   
+         $(document).ready(function() {
+            $( "#draggable" ).draggable();
+         });
+		 
+      </script>
+		
+    <style>
+         #draggable { width: 150px; height: 150px; padding: 0.5em; }
+         .back{
+            background-color: lightgray;
+            width: 25px;
+            padding: 20px;
+            border: 25px solid red;
+            margin: 25px;
+         }
+      </style>
+   </head>
+	
+   <body>
+
+      <div id = "draggable" class = "ui-widget-content">
+         <p class = "back">Drag</p>
+      </div>
+	 
+   </body>
+	
+</html>
